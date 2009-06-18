@@ -19,7 +19,7 @@ spec = Gem::Specification.new do |s|
   s.files            = %w(README.rdoc Rakefile) + Dir.glob("{lib,test}/**/*")
   # s.executables    = ['media-rss']
   
-  # s.add_dependency('gem_name', '~> 0.0.1')
+  s.add_dependency('nokogiri')
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

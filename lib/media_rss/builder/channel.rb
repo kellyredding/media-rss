@@ -10,7 +10,7 @@ module MediaRss
         @channel = channel
         @builder.channel {
           build_info
-          @channel.items.each |item| do
+          @channel.items.each do |item|
             Item.build(@builder, item)
           end
         }
@@ -19,7 +19,7 @@ module MediaRss
       protected
       
       def build_info
-        @builder.send('atom:icon') @channel.icon.to_s
+        @builder.send('atom:icon', @channel.icon.to_s)
         @builder.title @channel.title.to_s 
         @builder.link @channel.link.to_s
         @builder.description @channel.description.to_s

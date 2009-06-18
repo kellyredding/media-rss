@@ -1,7 +1,7 @@
 $:.unshift File.dirname(__FILE__)
 
 require 'media_rss/models'
-require 'media_rss/generator'
+require 'media_rss/builder'
 
 module MediaRss
   
