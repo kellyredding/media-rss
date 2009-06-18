@@ -11,7 +11,7 @@ module MediaRss
       @description = opts[:description]
       @thumb = opts[:thumb]
       @thumb_type = opts[:thumb_type]
-      @thumb_type ||= @@configuration[:default_thumb_type]
+      @thumb_type ||= MediaRss.configuration[:default_thumb_type]
       @thumb_type ||= 'image/jpeg'
       @content = opts[:content]
       @content_type = opts[:content_type]

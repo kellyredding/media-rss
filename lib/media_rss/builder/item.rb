@@ -5,7 +5,7 @@ module MediaRss
 
     class Item
       
-      def build(builder, item)
+      def self.build(builder, item)
         builder.item {
           builder.title item.title.to_s 
           builder.link item.link.to_s

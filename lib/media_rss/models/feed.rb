@@ -4,7 +4,7 @@ module MediaRss
   
   class Feed < ::Array
     def self.default_channel(title, ops = {})
-      opts[:icon] ||= @@congiguration[:default_icon] #'/images/insight.png'
+      opts[:icon] ||= MediaRss.congiguration[:default_icon]
       Channel.new(title, opts)
     end
   end

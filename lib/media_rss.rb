@@ -9,5 +9,8 @@ module MediaRss
   def self.configure(opts = {})
     @@configuration = opts || {}
   end
+  def self.configuration
+    @@configuration
+  end
   
 end
