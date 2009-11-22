@@ -7,7 +7,7 @@ require 'lib/media_rss/version'
 task :default => :test
 
 spec = Gem::Specification.new do |s|
-  s.name             = 'media-rss'
+  s.name             = 'kelredd-media-rss'
   s.version          = MediaRss::Version.to_s
   s.has_rdoc         = true
   s.extra_rdoc_files = %w(README.rdoc)
