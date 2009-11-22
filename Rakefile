@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
   s.summary          = "A gem to provide some classes for generating media-rss."
   s.author           = 'Kelly Redding'
   s.email            = 'kelly@kelredd.com'
-  s.homepage         = ''
+  s.homepage         = 'http://github.com/kelredd/media-rss'
   s.files            = %w(README.rdoc Rakefile) + Dir.glob("{lib,test}/**/*")
   # s.executables    = ['media-rss']
   
@@ -33,7 +33,7 @@ Rake::TestTask.new do |t|
 end
 
 desc 'Generate the gemspec to serve this Gem from Github'
-task :github do
+task :gemspec do
   file = File.dirname(__FILE__) + "/#{spec.name}.gemspec"
   File.open(file, 'w') {|f| f << spec.to_ruby }
   puts "Created gemspec: #{file}"

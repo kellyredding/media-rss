@@ -2,11 +2,11 @@
 
 == Description
 
-A gem to provide some classes for generating media-rss.
+A gem to provide some classes for generating Media RSS.
 
 == Installation
 
-    sudo gem install kelredd-media-rss --source http://gems.github.com
+    gem install kelredd-media-rss
 
 == Usage
 
